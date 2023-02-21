@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body class="grid text-white place-items-center text-white bg-gray-700 md:bg-sky-900">
+    <div>
+      <div
+        class="w-96 mt-12 mb-5 text-center text-3xl py-2 bg-gray-700 md:shadow-2xl md:shadow-gray-800 p-8 md:border border-gray-400 rounded-3xl flex flex-col gap-7 divide-y divide-gray-500">
+        Wheater App
+      </div>
+
+      <div
+        class="w-96 container-box bg-gray-700 md:shadow-2xl md:shadow-gray-800 p-8 md:border border-gray-400 rounded-3xl flex flex-col gap-7">
+        <div class="search-box flex flex-row justify-center items-center gap-4">
+          <div>
+            <picture>
+              <img
+                src="/images/location.webp"
+                alt="location logo"
+                title="Location"
+                class="w-10 h-10" />
+            </picture>
+          </div>
+
+          <div class="flex flex-row border border-gray-600 rounded-3xl">
+            <input
+              type="text"
+              placeholder="Search location"
+              class="rounded-l-3xl p-2 bg-gray-700 focus:outline-none focus:ring-1 focus:ring-gray-600 focus:bg-gray-800 pl-4" />
+            <button
+              class="search-box group hover:bg-gray-600 transition-all duration-75 ease-in rounded-r-3xl p-2">
+              <picture>
+                <img
+                  src="/images/search.webp"
+                  alt="Search button"
+                  class="w-7 h-7 focus:outline-none group-hover:scale-110 transition-all duration-75" />
+              </picture>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="not-found hidden flex flex-row md:flex-col text-center items-center pt-3 md:pt-0">
+          <lottie-player
+            autoplay
+            loop
+            mode="normal"
+            src="/images/404.json"
+            class="h-20 md:h-48">
+          </lottie-player>
+          <p class="">
+            Sorry, that location is unreachable this time... is it real?
+          </p>
+        </div>
+
+        <div
+          class=" flex flex-col justify-center gap-10 items-center">
+          <div class="weather-box hidden flex flex-col items-center gap-4">
+            <h1 class="city text-3xl md:text-5xl mt-3"></h1>
+            <picture>
+              <img
+                src=""
+                alt="Weather condition"
+                class="h-16 md:h-20" />
+            </picture>
+            <div>
+              <span class="temperature md:text-3xl"></>
+            </div>
+          </div>
+
+          <div class="weather-description hidden flex flex-row justify-between gap-12">
+            <div class="flex flex-row gap-3">
+              <picture>
+                <img src="images/humidity.webp" alt="" class="w-12" />
+              </picture>
+              <div>
+                <span class="humidity"></span>
+                <p>humidity</p>
+              </div>
+            </div>
+
+            <div class="flex flex-row gap-3">
+              <picture>
+                <img src="images/wind.webp" alt="" class="w-12" />
+              </picture>
+              <div>
+                <span class="wind"></span>
+                <p>Wind speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
