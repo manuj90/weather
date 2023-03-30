@@ -2,20 +2,4 @@
   font-family: "Roboto", sans-serif;
 }
 
-.container-box{
-  height:7.3rem
-}
-
-
-.fade-in {
-  animation: 0.5s fadeIn fowards;
-  animation-delay: 0.5s;
-}
-
-@keyFrames fadeIn{
-  to{
-    sclae:1;
-    opacity:1;
-  }
-}
 
