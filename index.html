@@ -2,8 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,48 +14,52 @@
     <title>Weather App</title>
   </head>
 
-  <body
-    class="grid text-white place-items-center text-white bg-gray-700 md:bg-sky-900">
+  <body>
     <div id="whather-app">
-      <input type="text" id="city-input" placeholder="Search City" />
-      <button id="search-button"></button>
-    </div>
-    <div id="container">
-      <div id="left-side">
-        <div id="weather-data">
-          <p id="city"></p>
-          <p id="date"></p>
+      <div id="search-box" class="bn">
+        <input type="text" id="city-input" placeholder="Search City" />
+        <button id="search-button">Search</button>
+      </div>
 
-          <div id="iconTemp" class="flex flex-row">
-            <p id="temperature">26</p>
-            <p>º</p>
-          </div>
+      <div id="container">
+        <div id="left-side">
+          <div id="weather-data">
+            <p id="city"></p>
+            <p id="date"></p>
 
-          <div id="feelType">
-            <div id="weathertype"></div>
-            <div id="feelslike"></div>
-          </div>
-
-          <div id="detailsContainer">
-            <div>
-              Humidity:
-              <p id="humidity"></p>
+            <div id="iconTemp">
+              <p id="temperature"></p>
+              <p>º</p>
             </div>
-            <div>
-              Windspeed:
-              <p id="windspeed"></p>
+
+            <div id="feelType">
+              <div id="weathertype"></div>
+              <div id="feelslike"></div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="right-side">
-        <canvas id="charts"></canvas>
-        <div id="tabs">
-          <button id="tabs">
-            <button id="tab-1" class="tab"></button>
-            <button id="tab-2" class="tab"></button>
-            <button id="tab-3" class="tab"></button>
-          </button>
+
+        <div id="detailsContainer">
+          <div>
+            Humidity:
+            <p id="humidity"></p>
+          </div>
+          <div>
+            Windspeed:
+            <p id="windspeed"></p>
+          </div>
+        </div>
+        
+        <div id="right-side">
+          <canvas id="charts"></canvas>
+          <div id="tabs">
+            <button id="tabs">
+              <button id="tab-1" class="tab"></button>
+              <button id="tab-2" class="tab"></button>
+              <button id="tab-3" class="tab"></button>
+              <button id="tab-4" class="tab"></button>
+            </button>
+          </div>
         </div>
       </div>
     </div>

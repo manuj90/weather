@@ -1,5 +1,204 @@
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background: url('https://www.almanac.com/sites/default/files/styles/or/public/images/classifying-clouds.jpg?itok=MOBKj7rV');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#whather-app {
+  width: fit-content;
+  height: fit-content;
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 35px 35px 68px 0px rgba(252, 122, 62, 0.5),
+    inset -0px -0px 16px 0px rgba(252, 122, 62, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+#search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#city-input {
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  width: 75%;
+  border: 1px solid white;
+  box-shadow: 0 8px 32px 0 rgba(252, 122, 62, 0.5);
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+#city-input:focus {
+  border: 1px solid rgba(77, 77, 77, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 31, 31, 0.5);
+  outline: none;
+}
+
+#search-button {
+  margin-left: 1rem;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  letter-spacing: 1.5px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background-color: rgb(252, 122, 62);
+  border: 1px solid rgba(255, 81, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(252, 122, 62, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+#search-button:hover {
+  background-color: rgb(116, 116, 116);
+  color: white;
+  border: 1px solid rgba(77, 77, 77, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 31, 31, 0.5);
+}
+
+#weather-app {
+  width: 80%;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 175, 70, 0.514);
+  border-radius: 20px;
+
+}
+
+#left-side,
+#right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 225, 210);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 50%;
+  height: 380px;
+}
+
+#left-side {
+  background-color: rgb(255, 209, 124);
+  margin-right: 1rem;
+}
+
+#chart {
+  width: 100%;
+  height: 100%;
+}
+
+#tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.tab {
+  padding: 10px 30px;
+  background-color: rgb(197, 197, 197);
+  border: none;
+  border-radius: 0.1rem;
+  margin: 0 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.tab:active{
+  color: white;
+  background: #006d9c;
+}
+
+.tab:hover {
+  color: white;
+  background: #005275;
+}
+
+#iconTemp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#temperature {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 100;
+  color: #86858585;
+  margin-top: -40px;
+}
+
+#city {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: -1rem;
+  color: white;
+}
+
+#weatherImg{
+  width: 64px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.feeltype{
+  color: white;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+text-align: center;
+}
+
+#weathertype{
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+#feelslike{
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+#detailsContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#detailsContainer div {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+#humidity, #windspeed{
+  font-size: 20px;
+  margin-top: 16px;
+  margin-right: 2rem;
+}
