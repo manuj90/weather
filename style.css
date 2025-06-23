@@ -8,13 +8,13 @@
 
 
 .fade-in {
-  animation: 0.5s fadeIn fowards;
+  animation: 0.5s fadeIn forwards;
   animation-delay: 0.5s;
 }
 
 @keyFrames fadeIn{
   to{
-    sclae:1;
+    scale:1;
     opacity:1;
   }
 }
