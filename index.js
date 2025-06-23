@@ -35,7 +35,7 @@ const searchCity = (city) => {
       const location = document.querySelector(".weather-box .city");
       const temperature = document.querySelector(".weather-box .temperature");
 
-      const himidity = document.querySelector(".humidity");
+      const humidity = document.querySelector(".humidity");
       const wind = document.querySelector(".wind");
 
       switch (json.weather[0].main) {
